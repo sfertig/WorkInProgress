@@ -1,0 +1,151 @@
+{
+    "name": "main",
+    "dirty": true,
+    "objects": {
+        "Title": {
+            "obj_type": "Text",
+            "variables": {
+                "font": "D_TITLE",
+                "text": "Work In Progress",
+                "color": [
+                    255,
+                    255,
+                    255
+                ],
+                "pos": [
+                    928,
+                    64
+                ],
+                "align": "center",
+                "z_index": 0,
+                "active": true,
+                "visible": true,
+                "offset": true,
+                "Global": false
+            }
+        },
+        "TitleRect": {
+            "obj_type": "Rect",
+            "variables": {
+                "x": 752,
+                "y": 111,
+                "w": 350,
+                "h": 2,
+                "color": [
+                    255,
+                    255,
+                    255
+                ],
+                "width": 0,
+                "z_index": 0,
+                "active": true,
+                "visible": false,
+                "offset": true,
+                "Global": false
+            }
+        },
+        "quitBtn": {
+            "obj_type": "btn",
+            "variables": {
+                "x": 880,
+                "y": 224,
+                "w": 96,
+                "h": 64,
+                "text": "Quit",
+                "font": "D45",
+                "pos": [
+                    1840,
+                    448
+                ]
+            }
+        },
+        "InfoText": {
+            "obj_type": "Text",
+            "variables": {
+                "font": "D35",
+                "text": "A game by sfertig",
+                "color": [
+                    255,
+                    255,
+                    255
+                ],
+                "pos": [
+                    108,
+                    1065
+                ],
+                "align": "center",
+                "z_index": 1,
+                "active": true,
+                "visible": true,
+                "offset": true,
+                "Global": false
+            }
+        },
+        "DEBUGER": {
+            "obj_type": "DEBUG",
+            "variables": {
+                "pos": [
+                    0,
+                    0
+                ]
+            }
+        },
+        "testBtn": {
+            "obj_type": "btn",
+            "variables": {
+                "x": 0,
+                "y": 1054,
+                "w": 214,
+                "h": 24,
+                "text": "",
+                "font": "D35",
+                "pos": [
+                    57,
+                    1684
+                ]
+            }
+        },
+        "startBtn": {
+            "obj_type": "btn",
+            "variables": {
+                "x": 880,
+                "y": 128,
+                "w": 96,
+                "h": 64,
+                "text": "Start",
+                "font": "D45",
+                "pos": [
+                    848,
+                    128
+                ],
+                "z_index": 0
+            }
+        }
+    },
+    "imports": [
+        "from .btn import btn",
+        "from .Levels import Levels",
+        "from .DEBUG import DEBUG"
+    ],
+    "functions": {
+        "__init__": {
+            "args": [],
+            "code": []
+        },
+        "update": {
+            "args": [],
+            "code": [
+                "",
+                "if self.quitBtn.pressed: Game.quit()",
+                "elif self.startBtn.pressed: Levels()"
+            ]
+        },
+        "render": {
+            "args": [],
+            "code": [
+                "pass"
+            ]
+        }
+    },
+    "variables": {}
+}

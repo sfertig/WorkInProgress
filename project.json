@@ -1,0 +1,22 @@
+{
+    "project_name": "GithubGameOff",
+    "version": "0.0.1",
+    "export": {
+        "windows_windowed": false
+    },
+    "window": {
+        "width": 1920,
+        "height": 1080,
+        "fullscreen": true,
+        "fps": 60,
+        "bg_color": [
+            0,
+            0,
+            0
+        ],
+        "title": "GithubGameOff | PyScene Studio"
+    },
+    "main_scene": "scenes/main.json",
+    "engine_version": "0.2.4",
+    "include_splashscreen": true
+}

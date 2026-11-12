@@ -1,0 +1,66 @@
+{
+    "name": "Levels",
+    "dirty": false,
+    "objects": {
+        "Title": {
+            "obj_type": "Text",
+            "variables": {
+                "font": "D_TITLE",
+                "text": "Level Selection:",
+                "color": [
+                    255,
+                    255,
+                    255
+                ],
+                "pos": [
+                    280,
+                    50
+                ],
+                "align": "center",
+                "z_index": 0,
+                "active": true,
+                "visible": true,
+                "offset": true,
+                "Global": false
+            }
+        },
+        "back": {
+            "obj_type": "btn",
+            "variables": {
+                "x": 12,
+                "y": 90,
+                "w": 64,
+                "h": 40,
+                "text": "back",
+                "font": "D35",
+                "pos": [
+                    12,
+                    90
+                ]
+            }
+        }
+    },
+    "imports": [
+        "from .btn import btn"
+    ],
+    "functions": {
+        "__init__": {
+            "args": [],
+            "code": []
+        },
+        "update": {
+            "args": [],
+            "code": [
+                "",
+                "if self.back.pressed: Game.scenes[\"main\"]()"
+            ]
+        },
+        "render": {
+            "args": [],
+            "code": [
+                "pass"
+            ]
+        }
+    },
+    "variables": {}
+}

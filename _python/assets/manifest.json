@@ -1,0 +1,29 @@
+{
+    "files": [],
+    "definitions": [
+        {
+            "name": "D35",
+            "type": "font",
+            "options": {
+                "size": 35
+            },
+            "source": "system_default"
+        },
+        {
+            "name": "D_TITLE",
+            "type": "font",
+            "options": {
+                "size": 100
+            },
+            "source": "system_default"
+        },
+        {
+            "name": "D45",
+            "type": "font",
+            "options": {
+                "size": 45
+            },
+            "source": "system_default"
+        }
+    ]
+}

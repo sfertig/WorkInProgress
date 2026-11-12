@@ -1,0 +1,35 @@
+{
+    "name": "DEBUG",
+    "dirty": false,
+    "imports": [],
+    "objects": {},
+    "functions": {
+        "__init__": {
+            "args": [],
+            "code": []
+        },
+        "update": {
+            "args": [],
+            "code": [
+                "",
+                "if Keys.is_pressed(Keys.escape): Game.quit() #for debug / testing"
+            ]
+        },
+        "render": {
+            "args": [],
+            "code": [
+                "pass"
+            ]
+        }
+    },
+    "variables": {
+        "pos": [
+            0,
+            0
+        ],
+        "z_index": 0,
+        "active": true,
+        "visible": true,
+        "Global": true
+    }
+}
